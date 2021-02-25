@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar" id="nav">
+        <div class="container">
+          <div class="navbar__wrapper">
+            <div class="navbar__collapse"><span></span></div>
+            <ul class="navbar__menu">
+              <li class="active has-dropdown"><a href="#">КАТАЛОГ</a>
+                <div class="dropdown-list">
+                  <div class="container">
+                    <div class="dropdown__block"><span>Все украшения</span>
+                      <ul>
+                        <li><a href="#">Обручальные кольца</a></li>
+                        <li><a href="#">Помолвочные кольца</a></li>
+                        <li><a href="#">Дизайнерские кольца</a></li>
+                        <li><a href="#">Подвески</a></li>
+                        <li><a href="#">Серьги</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__block"><span>Материал</span>
+                      <ul>
+                        <li><a href="#">Комбинированное золото</a></li>
+                        <li><a href="#">Белое золото</a></li>
+                        <li><a href="#">Розовое золото</a></li>
+                        <li><a href="#">Жёлтое золото</a></li>
+                        <li><a href="#">Платина</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__block"><span>Категории</span>
+                      <ul>
+                        <li><a href="#">С россыпью бриллиантов</a></li>
+                        <li><a href="#">С цветными камнями</a></li>
+                        <li><a href="#">До 50.000Р</a></li>
+                        <li><a href="#">До 100.000Р</a></li>
+                        <li><a href="#">Создайте уникальный дизайн</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__block"><a class="banner" href="#"><img src="img/slide-1.jpg" alt="" srcset=""></a></div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">УНИКАЛЬНЫЙ ДИЗАЙН</a></li>
+              <li><a href="#">ГАРАНТИИ</a></li>
+              <li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+              <li> <a href="#">О НАС</a></li>
+              <ul class="navbar__menu--contacts">
+                <li><a class="btn-rectangle" href="#"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+                <li>+7 (495) 646-88-70</li>
+                <li>+7 (925) 214-71-02</li>
+                <li>Заказать обратный звонок</li>
+                <li>info@miracle-jewelry.ru</li>
+              </ul>
+            </ul>
+            <div class="navbar__basket"><a class="navbar__basket_link" href="#"><i class="fa fa-shopping-cart"></i><span class="navbar__basket_count">2</span></a></div>
+            <div class="navbar__logo"><a href="/"><img src="img/logo.png" alt="Miracle" data-inverse="img/logo-mini.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page">
+      <div class="container">
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li>Уникальный дизайн</li>
+          </ul>
+        </div>
+        <div class="catalog">
+          <div class="catalog__heading">
+            <h2 class="catalog__title">Обручальные кольца</h2>
+            <p class="catalog__subtitle">Великолепный дизайн и неповторимое мастерство.</p>
+          </div>
+          <div class="catalog__filter">
+            <div class="filter">
+              <div class="filter__wrapper">
+                <div class="filter__left">
+                  <div class="filter__sort">
+                    <select class="justselect justselect-left">
+                      <option value="0" selected="selected">По популярности</option>
+                      <option value="1">Пункт 1</option>
+                      <option value="2">Пункт 2</option>
+                      <option value="3">Пункт 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter__right">
+                  <div class="filter__sort filter__price"><span>Цена</span>
+                    <div class="filter-range">
+                      <div class="col-input">
+                        <input type="text" id="mileageOne" readonly>
+                        <input type="text" id="mileageTwo" readonly>
+                      </div>
+                      <div class="col-filter">
+                        <div id="mileage-range"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__sort">
+                    <select class="justselect">
+                      <option value="Драгоценные камни" selected="selected">Драгоценные камни</option>
+                      <option value="Бриллиант">Бриллиант</option>
+                      <option value="Сапфир">Сапфир</option>
+                      <option value="Чёрный бриллиант">Чёрный бриллиант</option>
+                      <option value="Рубин">Рубин</option>
+                    </select>
+                  </div>
+                  <div class="filter__sort">
+                    <select class="justselect">
+                      <option value="Проба металла" selected="selected">Проба металла</option>
+                      <option value="Золото 585">Золото 585</option>
+                      <option value="Золото 750">Золото 750</option>
+                      <option value="Платина 950">Платина 950</option>
+                    </select>
+                  </div>
+                  <div class="filter__sort">
+                    <select class="justselect">
+                      <option value="Металл" selected="selected">Металл</option>
+                      <option value="Белое золото">Белое золото</option>
+                      <option value="Розовое золото">Розовое золото</option>
+                      <option value="Жёлтое золото">Жёлтое золото</option>
+                      <option value="Платина">Платина</option>
+                      <option value="Комбинированное золото">Комбинированное золото</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div><a class="catalog-mobile" href="#">Фильтры<span>2</span></a>
+            <div class="catalog-view"><i class="fas fa-th"></i></div>
+          </div>
+          <ul class="catalog__list catalog-grid">
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/1.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/2.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/3.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/4.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/5.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/6.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/1.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/2.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/3.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/4.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/5.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="like">
+                <svg id="icon_heart" viewBox="0 0 44 40">
+                  <path d="M22 40a1 1 0 0 1-.68-.27c-.59-.54-14.44-13.43-18.66-19.14A13.22 13.22 0 0 1 0 12.7 12.59 12.59 0 0 1 12.45 0 12.33 12.33 0 0 1 22 4.55 12.33 12.33 0 0 1 31.54 0 12.59 12.59 0 0 1 44 12.7a13.23 13.23 0 0 1-2.66 7.9c-4.23 5.7-18.07 18.59-18.66 19.13A1 1 0 0 1 22 40zM12.45 2A10.59 10.59 0 0 0 2 12.7a11.24 11.24 0 0 0 2.27 6.71C7.86 24.26 19.11 34.92 22 37.63c2.89-2.71 14.14-13.37 17.73-18.23A11.24 11.24 0 0 0 42 12.7 10.59 10.59 0 0 0 31.54 2a10.38 10.38 0 0 0-8.71 4.78 1 1 0 0 1-1.68 0A10.38 10.38 0 0 0 12.45 2z"></path>
+                </svg>
+                <svg id="icon_heart-black" viewBox="0 0 44 40">
+                  <path d="M22 40c-.24 0-.49-.09-.68-.27-.59-.54-14.44-13.43-18.66-19.13C.92 18.24 0 15.51 0 12.7 0 5.7 5.59 0 12.45 0c3.72 0 7.19 1.68 9.55 4.55C24.35 1.68 27.83 0 31.55 0 38.41 0 44 5.7 44 12.7c0 2.81-.92 5.54-2.66 7.9-4.23 5.7-18.07 18.59-18.66 19.13-.19.18-.44.27-.68.27z"></path>
+                </svg>
+              </div><a class="img" href="#"><img src="img/catalog/6.jpg" alt=""></a>
+              <div class="catalog__item_info"><a class="title" href="#">Обручальные кольца W234</a>
+                <ul class="composition">
+                  <li>Материал: Комбинированное золото 585</li>
+                  <li>Вставки: Бриллианты (14 шт, 0.23 ct),</li>
+                  <li>Бриллианты (5 шт, 0.12 ct)</li>
+                </ul>
+                <div class="price"><span>От 112 000 руб.</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__block"><a class="footer__logo" href="/"><img src="img/logo-f.png" alt="" srcset=""></a>
+            <ul>
+              <li class="address">129626, МОСКВА, МИРА, Д. 102 СТР.12</li>
+              <li class="phone">+7 (495) 646-88-70</li>
+              <li class="phone">+7 (925) 214-71-02</li>
+              <li class="email">INFO@MIRACLE-JEWELRY.RU</li>
+              <li> <a href="#">ПУБЛИЧНАЯ ОФЕРТА</a></li>
+            </ul>
+          </div>
+          <div class="footer__block"><span>ИНФОРМАЦИЯ</span>
+            <ul class="footer__menu">
+              <li><a href="#">Политика конфеденциальности</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Гарантии</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">О нас </a></li>
+            </ul>
+          </div>
+          <div class="footer__block"><span>КАТЕГОРИИ</span>
+            <ul class="footer__menu">
+              <li><a href="#">Обручальные кольца</a></li>
+              <li><a href="#">Помолвочные кольца</a></li>
+              <li><a href="#">Серьги</a></li>
+              <li><a href="#">Подвески</a></li>
+              <li><a href="#">Дизайнерские кольца </a></li>
+              <li><a href="#">СОЗДАЙТЕ УНИКАЛЬНЫЙ ДИЗАЙН </a></li>
+            </ul>
+          </div>
+          <div class="footer__block"><span>Следите за нами</span>
+            <ul class="footer__social">
+              <li><a href="#"><i class="fab fa-instagram"></i><span>Следите за новыми дизайнами в Instagram</span></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-vk"></i></a></li>
+            </ul><span>Мы принимаем к оплате</span>
+            <ul class="footer__payment">
+              <li class="visa"></li>
+              <li class="mastercard"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="filter-mobile"><span>Фильтры</span><a class="close" href="#"><i class="fas fa-times"></i></a>
+      <ul>
+        <li class="mobile-dropdown"><a href="#">
+             Категория<i class="fas fa-chevron-right"></i></a>
+          <div class="filter-count"><span>
+               Обручальные кольца<i class="fas fa-times"></i></span><span>
+               Помолвочные кольца<i class="fas fa-times"></i></span></div>
+          <div class="filter-drop"><a class="back" href="#"><i class="fas fa-chevron-left"></i></a>
+            <p>Категория</p><a class="clear" href="#">Сбросить</a>
+            <ul class="filter-mobile-dropdown">
+              <li> 
+                <label class="label" for="c-1">
+                  <input type="checkbox" id="c-1"><span class="checkmark"></span>Обручальные кольца
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="c-2">
+                  <input type="checkbox" id="c-2"><span class="checkmark"></span>Помолвочные кольца
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="c-3">
+                  <input type="checkbox" id="c-3"><span class="checkmark"></span>Дизайнерские кольца
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="c-4">
+                  <input type="checkbox" id="c-4"><span class="checkmark"></span>Подвески
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="c-5">
+                  <input type="checkbox" id="c-5"><span class="checkmark"></span>Серьги
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-dropdown"><a href="#">
+             Материал<i class="fas fa-chevron-right"></i></a>
+          <div class="filter-drop"><a class="back" href="#"><i class="fas fa-chevron-left"></i></a>
+            <p>Материал</p><a class="clear" href="#">Сбросить</a>
+            <ul class="filter-mobile-dropdown">
+              <li> 
+                <label class="label" for="m-1">
+                  <input type="checkbox" id="m-1"><span class="checkmark"></span>Комбинированное золото
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="m-2">
+                  <input type="checkbox" id="m-2"><span class="checkmark"></span>Белое золото
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="m-3">
+                  <input type="checkbox" id="m-3"><span class="checkmark"></span>Розовое золото
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="m-4">
+                  <input type="checkbox" id="m-4"><span class="checkmark"></span>Жёлтое золото
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="m-5">
+                  <input type="checkbox" id="m-5"><span class="checkmark"></span>Платина
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-dropdown"><a href="#">
+             Проба<i class="fas fa-chevron-right"></i></a>
+          <div class="filter-count">
+            <s></s>
+          </div>
+          <div class="filter-drop"><a class="back" href="#"><i class="fas fa-chevron-left"></i></a>
+            <p>Проба</p><a class="clear" href="#">Сбросить</a>
+            <ul class="filter-mobile-dropdown">
+              <li> 
+                <label class="label" for="p-1">
+                  <input type="checkbox" id="p-1"><span class="checkmark"></span>585
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="p-2">
+                  <input type="checkbox" id="p-2"><span class="checkmark"></span>750
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="p-3">
+                  <input type="checkbox" id="p-3"><span class="checkmark"></span>950
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-dropdown"><a href="#">
+             Вставки<i class="fas fa-chevron-right"></i></a>
+          <div class="filter-count">
+            <s></s>
+          </div>
+          <div class="filter-drop"><a class="back" href="#"><i class="fas fa-chevron-left"></i></a>
+            <p>Вставки</p><a class="clear" href="#">Сбросить</a>
+            <ul class="filter-mobile-dropdown">
+              <li> 
+                <label class="label" for="v-1">
+                  <input type="checkbox" id="v-1"><span class="checkmark"></span>Бриллиант
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="v-2">
+                  <input type="checkbox" id="v-2"><span class="checkmark"></span>Сапфир
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="v-3">
+                  <input type="checkbox" id="v-3"><span class="checkmark"></span>Чёрный бриллиант
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="v-4">
+                  <input type="checkbox" id="v-4"><span class="checkmark"></span>Рубин
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-dropdown"><a href="#">
+             Количество камней<i class="fas fa-chevron-right"></i></a>
+          <div class="filter-count">
+            <s></s>
+          </div>
+          <div class="filter-drop"><a class="back" href="#"><i class="fas fa-chevron-left"></i></a>
+            <p>Количество камней</p><a class="clear" href="#">Сбросить</a>
+            <ul class="filter-mobile-dropdown"><a class="clear" href="#">Сбросить</a>
+              <li> 
+                <label class="label" for="k-1">
+                  <input type="checkbox" id="k-1"><span class="checkmark"></span>4
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="k-2">
+                  <input type="checkbox" id="k-2"><span class="checkmark"></span>7
+                </label>
+              </li>
+              <li> 
+                <label class="label" for="k-3">
+                  <input type="checkbox" id="k-3"><span class="checkmark"></span>9
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-dropdown"><a href="#">
+             Цена<i class="fas fa-chevron-right"></i></a>
+          <div class="filter-count">
+            <s></s>
+          </div>
+          <div class="filter-drop"><a class="back" href="#"><i class="fas fa-chevron-left"></i></a>
+            <p>Вставки</p>
+            <ul class="filter-mobile-dropdown">
+              <li><a class="dropmenu-range">
+                  <div class="col-filter">
+                    <div id="dropdown-range"></div>
+                  </div>
+                  <div class="col-input">
+                    <input type="text" id="dropdown-rangeOne" readonly>
+                    <input type="text" id="dropdown-rangeTwo" readonly>
+                  </div></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
